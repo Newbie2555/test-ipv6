@@ -40,17 +40,6 @@ colongvpnnnnnnnnn="raw.githubusercontent.com/Newbie2555/test-ipv6/main/websocket
 # Link Hosting Kalian Untuk Ohp
 colongvpnnnnnnnnnn="raw.githubusercontent.com/Newbie2555/test-ipv6/main/ohp"
 
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/colongvpn/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/colongvpn"
-exit 0
 fi
 rm -f setup.sh
 clear
