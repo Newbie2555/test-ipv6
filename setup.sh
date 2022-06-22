@@ -5,7 +5,7 @@ if [ "${EUID}" -ne 0 ]; then
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ Allowed by WaanProject"
-		
+		exit 1
 fi
 # My Telegram : https://t.me/colongvpn
 # ==========================================
